@@ -6,14 +6,7 @@ Zotero.Zotlink = {
         // get old path
         var win = Services.wm.getMostRecentWindow("navigator:browser");
         var sel_attachments = win.ZoteroPane.getSelectedItems()
-                    .map(item => item.isRegularItem() ? item.getAttachments() : item)
-                    .reduce((a, b) => a.concat(b), [])
-                    .map(item => typeof item == 'number' ? Zotero.Items.get(item) : item)
-                    .filter(item => item.isAttachment())
-                    .filter(att => att.attachmentLinkMode !== Zotero.Attachments.LINK_MODE_LINKED_URL)
-                    .map(att => att.id);  
-        var atts = Zotero.Items.get(sel_attachments)
-        att = atts[0]
+        var att = Zotero.Items.get(sel_attachments[0].id)
         old_filepath = att.getFilePath()
         old_filepath = OS.Path.normalize(old_filepath)
         // get all files in the parent item
