@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://zotlink/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://zotlink/locale/overlay.dtd">
+
+<overlay
+    id="zotlink"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script
+        type="application/x-javascript"
+        src="chrome://zotlink/content/scripts/zotlink.js"/>
+
+		<!-- <commandset id="mainCommandSet">
+			<command id="cmd_zotero_scihub_update_all" oncommand="Zotero.Scihub.updateAll();"/>
+		</commandset>
+
+		<menupopup id="menu_ToolsPopup">
+				<menuseparator/>
+				<menuitem
+						id="zotero-scihub-tools-updateall"
+						label="&zotero.scihub.updateAll.label;"
+						command="cmd_zotero_scihub_update_all"
+						class="menuitem-iconic zotero-scihub-icon"/>
+		</menupopup> -->
+    <menupopup
+        id="zotero-itemmenu"
+        >
+                <!-- onpopupshowing="ZoteroPane.buildItemContextMenu();" -->
+				<menuseparator/>
+        <menuitem
+            label="&zotero.Zotlink.move.label;"
+            oncommand="Zotero.Zotlink.moveSupplemantaryFile()"
+        />
+    </menupopup>
+</overlay>

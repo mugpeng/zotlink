@@ -1,0 +1,7 @@
+content   Zotlink             chrome/content/
+
+skin      Zotlink   default   chrome/skin/
+
+locale    Zotlink   en-US     chrome/locale/en-US/
+
+overlay	chrome://zotero/content/zoteroPane.xul chrome://Zotlink/content/overlay.xul
