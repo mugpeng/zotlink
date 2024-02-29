@@ -22,6 +22,12 @@ This task serves more as an educational exercise for me to learn Zotero plugin d
 
 # TODO
 
+long goal:
+
+- Auto extract supplementary files?
+
+
+
 - UI development
 - Iterate over all supplementary files
 - Error control
